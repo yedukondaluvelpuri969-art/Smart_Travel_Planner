@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Travel Planner</title>
+
+<link rel="stylesheet" href="stps.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--=========================================================
+                        LOADER
+==========================================================-->
+
+<div id="loader">
+
+    <div class="loader-spinner"></div>
+
+    <h2 class="loader-text">
+
+        Smart Travel Planner
+
+    </h2>
+
+</div>
+
+<!--=========================================================
+                        NAVBAR
+==========================================================-->
+
+<header>
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <i class="fa-solid fa-earth-asia"></i>
+
+        <span>Smart Travel Planner</span>
+
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#planner">Planner</a></li>
+
+        <li><a href="#popular">Destinations</a></li>
+
+        <li><a href="#travelDashboard">Dashboard</a></li>
+
+        <li><a href="#savedTrips">Saved Trips</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <button id="themeBtn">
+
+        <i class="fa-solid fa-moon"></i>
+
+    </button>
+
+</nav>
+
+</header>
+
+<!--=========================================================
+                        HERO
+==========================================================-->
+
+<section class="hero">
+
+<div class="hero-overlay">
+
+<div class="container">
+
+<div class="hero-content">
+
+<span class="hero-badge">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+AI Powered Smart Travel Planning
+
+</span>
+
+<h1>
+
+Plan Your Perfect Journey
+
+<br>
+
+<span>Anywhere in India</span>
+
+</h1>
+
+<p>
+
+Design smarter trips with AI-generated itineraries,
+budget analysis, weather forecasts, Google Maps,
+destination guides, travel videos, reviews,
+and automatic trip saving — all from one modern travel planner.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#planner">
+
+<button>
+
+<i class="fa-solid fa-route"></i>
+
+Start Planning
+
+</button>
+
+</a>
+
+<a href="#popular">
+
+<button class="secondary-btn">
+
+<i class="fa-solid fa-location-dot"></i>
+
+Explore Places
+
+</button>
+
+</a>
+
+</div>
+
+<div class="hero-stats">
+
+<div class="stat">
+
+<h2>50+</h2>
+
+<p>Tourist Destinations</p>
+
+</div>
+
+<div class="stat">
+
+<h2>1000+</h2>
+
+<p>Trips Planned</p>
+
+</div>
+
+<div class="stat">
+
+<h2>24/7</h2>
+
+<p>AI Assistance</p>
+
+</div>
+
+<div class="stat">
+
+<h2>95%</h2>
+
+<p>User Satisfaction</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--=========================================================
+                    FEATURES SECTION
+==========================================================-->
+
+<section id="features">
+
+<div class="container">
+
+<div class="planner-header">
+
+<span class="section-tag">
+
+<i class="fa-solid fa-star"></i>
+
+WHY CHOOSE US
+
+</span>
+
+<h2>Everything You Need For A Perfect Journey</h2>
+
+<p>
+
+Smart Travel Planner combines AI, live weather,
+budget analysis, Google Maps, destination guides,
+and itinerary planning into one platform.
+
+</p>
+
+</div>
+
+<div class="features-grid">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-robot"></i>
+
+<h3>AI Trip Planner</h3>
+
+<p>
+
+Generate a complete personalized travel itinerary
+within seconds.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-cloud-sun"></i>
+
+<h3>Live Weather</h3>
+
+<p>
+
+Check the latest weather before travelling to
+your destination.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-wallet"></i>
+
+<h3>Budget Planning</h3>
+
+<p>
+
+Automatically distribute your budget into hotel,
+food, transport and activities.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-map-location-dot"></i>
+
+<h3>Google Maps</h3>
+
+<p>
+
+Open maps instantly and navigate to your selected
+destination.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--=========================================================
+                    AI TRAVEL PLANNER
+==========================================================-->
+
+<section id="planner">
+
+<div class="container">
+
+<div class="planner-header">
+
+<span class="section-tag">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+AI TRAVEL PLANNER
+
+</span>
+
+<h2>Create Your Perfect Travel Plan</h2>
+
+<p>
+
+Enter your travel preferences below and let
+Smart Travel Planner generate a personalized
+trip plan instantly.
+
+</p>
+
+</div>
+
+<form id="tripForm">
+
+<div class="form-grid">
+
+<div class="inputBox">
+
+<label>
+
+<i class="fa-solid fa-location-dot"></i>
+
+Destination
+
+</label>
+
+<input
+
+type="text"
+
+id="destination"
+
+placeholder="Example : Goa, Ooty, Manali..."
+
+required
+
+>
+
+</div>
+
+<div class="inputBox">
+
+<label>
+
+<i class="fa-solid fa-calendar-days"></i>
+
+Number of Days
+
+</label>
+
+<input
+
+type="number"
+
+id="days"
+
+min="1"
+
+max="30"
+
+required
+
+>
+
+</div>
+
+<div class="inputBox">
+
+<label>
+
+<i class="fa-solid fa-wallet"></i>
+
+Budget (₹)
+
+</label>
+
+<input
+
+type="number"
+
+id="budget"
+
+placeholder="Enter Budget"
+
+required
+
+>
+
+</div>
+
+<div class="inputBox">
+
+<label>
+
+<i class="fa-solid fa-users"></i>
+
+Travellers
+
+</label>
+
+<input
+
+type="number"
+
+id="people"
+
+value="1"
+
+min="1"
+
+required
+
+>
+
+</div>
+
+<div class="inputBox">
+
+<label>
+
+<i class="fa-solid fa-plane"></i>
+
+Transport
+
+</label>
+
+<select id="transport">
+
+<option>Bus</option>
+
+<option>Train</option>
+
+<option>Flight</option>
+
+<option>Car</option>
+
+</select>
+
+</div>
+
+<div class="inputBox">
+
+<label>
+
+<i class="fa-solid fa-hotel"></i>
+
+Hotel Type
+
+</label>
+
+<select id="hotel">
+
+<option>Budget</option>
+
+<option>Standard</option>
+
+<option>Luxury</option>
+
+</select>
+
+</div>
+<div class="inputBox">
+
+<label>
+
+<i class="fa-solid fa-utensils"></i>
+
+Food Preference
+
+</label>
+
+<select id="food">
+
+<option>Veg</option>
+
+<option>Non-Veg</option>
+
+<option>Mixed</option>
+
+</select>
+
+</div>
+
+<div class="inputBox">
+
+<label>
+
+<i class="fa-solid fa-heart"></i>
+
+Travel Type
+
+</label>
+
+<select id="tripType">
+
+<option>Family</option>
+
+<option>Solo</option>
+
+<option>Friends</option>
+
+<option>Couple</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="planner-buttons">
+
+<button type="submit" id="generateBtn">
+
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+
+Generate Smart Travel Plan
+
+</button>
+
+<button type="reset" id="resetBtn">
+
+<i class="fa-solid fa-arrow-rotate-left"></i>
+
+Reset Planner
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+
+<!--=========================================================
+                GENERATED REPORT
+==========================================================-->
+
+<section id="generatedPlan">
+
+<div class="container">
+
+<div class="planner-header">
+
+<span class="section-tag">
+
+<i class="fa-solid fa-file-lines"></i>
+
+AI GENERATED REPORT
+
+</span>
+
+<h2>Your Personalized Travel Plan</h2>
+
+<p>
+
+After clicking <strong>Generate Smart Travel Plan</strong>,
+your complete itinerary, budget analysis, weather,
+destination details and recommendations will appear below.
+
+</p>
+
+</div>
+
+<div class="plan-container">
+
+<div id="result" class="plan-card">
+
+<div class="plan-title">
+
+<h2>
+
+<i class="fa-solid fa-route"></i>
+
+Travel Report
+
+</h2>
+
+<span class="badge">
+
+Waiting for Trip Details
+
+</span>
+
+</div>
+
+<div class="summary-box">
+
+<p style="text-align:center;">
+
+<i class="fa-solid fa-circle-info"></i>
+
+Your AI-generated travel report will appear here after
+submitting the planner form.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--=========================================================
+                POPULAR DESTINATIONS
+==========================================================-->
+
+<section id="popular">
+
+<div class="container">
+
+<div class="planner-header">
+
+<span class="section-tag">
+
+<i class="fa-solid fa-earth-asia"></i>
+
+TOP DESTINATIONS
+
+</span>
+
+<h2>Explore India's Best Tourist Destinations</h2>
+
+<p>
+
+Select a destination to view its travel guide,
+Google reviews, weather information and map.
+
+</p>
+
+</div>
+
+<div class="cards">
+
+<!-- GOA -->
+
+<div class="card">
+
+<img src="images/goa.jpg" alt="Goa">
+
+<div class="card-content">
+
+<h3>Goa</h3>
+
+<p>🏖 Beaches • Nightlife • Water Sports</p>
+
+<div class="card-info">
+
+<span>
+
+<i class="fa-solid fa-calendar"></i>
+
+Oct – Mar
+
+</span>
+
+<span>
+
+<i class="fa-solid fa-wallet"></i>
+
+₹12,000+
+
+</span>
+
+</div>
+
+<button
+
+class="explore-btn"
+
+data-place="Goa">
+
+<i class="fa-solid fa-compass"></i>
+
+Explore
+
+</button>
+
+</div>
+
+</div>
+
+<!-- MANALI -->
+
+<div class="card">
+
+<img src="images/manali.jpg" alt="Manali">
+
+<div class="card-content">
+
+<h3>Manali</h3>
+
+<p>🏔 Snow • Adventure • Mountains</p>
+
+<div class="card-info">
+
+<span>
+
+<i class="fa-solid fa-calendar"></i>
+
+Nov – Feb
+
+</span>
+
+<span>
+
+<i class="fa-solid fa-wallet"></i>
+
+₹15,000+
+
+</span>
+
+</div>
+
+<button
+
+class="explore-btn"
+
+data-place="Manali">
+
+<i class="fa-solid fa-compass"></i>
+
+Explore
+
+</button>
+
+</div>
+
+</div>
+
+<!-- OOTY -->
+
+<div class="card">
+
+<img src="images/ooty.jpg" alt="Ooty">
+
+<div class="card-content">
+
+<h3>Ooty</h3>
+
+<p>🌿 Tea Gardens • Hills • Nature</p>
+
+<div class="card-info">
+
+<span>
+
+<i class="fa-solid fa-calendar"></i>
+
+All Year
+
+</span>
+
+<span>
+
+<i class="fa-solid fa-wallet"></i>
+
+₹10,000+
+
+</span>
+
+</div>
+
+<button
+
+class="explore-btn"
+
+data-place="Ooty">
+
+<i class="fa-solid fa-compass"></i>
+
+Explore
+
+</button>
+
+</div>
+
+</div>
+
+<!-- KERALA -->
+
+<div class="card">
+
+<img src="images/kerala.jpg" alt="Kerala">
+
+<div class="card-content">
+
+<h3>Kerala</h3>
+
+<p>🚤 Backwaters • Houseboats • Nature</p>
+
+<div class="card-info">
+
+<span>
+
+<i class="fa-solid fa-calendar"></i>
+
+Sep – Mar
+
+</span>
+
+<span>
+
+<i class="fa-solid fa-wallet"></i>
+
+₹14,000+
+
+</span>
+
+</div>
+
+<button
+
+class="explore-btn"
+
+data-place="Kerala">
+
+<i class="fa-solid fa-compass"></i>
+
+Explore
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--=========================================================
+                DESTINATION DETAILS
+==========================================================-->
+
+<section id="destinationDetails">
+
+<div class="container">
+
+<div class="destination-box">
+
+<div class="destination-header">
+
+<h2 id="destinationTitle">
+
+Choose a Destination
+
+</h2>
+
+<p id="destinationDescription">
+
+Click the Explore button to view
+complete destination details.
+
+</p>
+
+</div>
+
+<div class="destination-grid">
+
+<div class="info-card">
+
+<i class="fa-solid fa-calendar-days"></i>
+
+<h3>Best Time</h3>
+
+<p id="bestTime">
+
+--
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<i class="fa-solid fa-wallet"></i>
+
+<h3>Estimated Budget</h3>
+
+<p id="estimatedBudget">
+
+--
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>Recommended Stay</h3>
+
+<p id="recommendedDays">
+
+--
+
+</p>
+
+</div>
+
+<div class="info-card">
+
+<i class="fa-solid fa-star"></i>
+
+<h3>Rating</h3>
+
+<p id="destinationRating">
+
+★★★★★
+
+</p>
+
+</div>
+
+</div>
+
+<div class="destination-actions">
+
+<button id="watchVideoBtn">
+
+<i class="fa-brands fa-youtube"></i>
+
+Watch Travel Guide
+
+</button>
+
+<button id="googleReviewBtn">
+
+<i class="fa-brands fa-google"></i>
+
+Google Reviews
+
+</button>
+
+<button id="mapBtn">
+
+<i class="fa-solid fa-map-location-dot"></i>
+
+Open Google Maps
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--=========================================================
+                BUDGET ANALYSIS
+==========================================================-->
+
+<section id="tripAnalytics">
+
+<div class="container">
+
+<div class="planner-header">
+
+<span class="section-tag">
+
+<i class="fa-solid fa-chart-pie"></i>
+
+AI BUDGET ANALYSIS
+
+</span>
+
+<h2>Smart Budget Distribution</h2>
+
+<p>
+
+Your total travel budget will be intelligently divided
+into hotel, food, transport and activities.
+
+</p>
+
+</div>
+
+<div class="analytics-grid">
+
+<div class="analytics-card">
+
+<i class="fa-solid fa-hotel"></i>
+
+<h3>Hotel</h3>
+
+<h2 id="hotelBudget">₹0</h2>
+
+<p>Accommodation Cost</p>
+
+</div>
+
+<div class="analytics-card">
+
+<i class="fa-solid fa-utensils"></i>
+
+<h3>Food</h3>
+
+<h2 id="foodBudget">₹0</h2>
+
+<p>Meals & Dining</p>
+
+</div>
+
+<div class="analytics-card">
+
+<i class="fa-solid fa-bus"></i>
+
+<h3>Transport</h3>
+
+<h2 id="transportBudget">₹0</h2>
+
+<p>Travel Expenses</p>
+
+</div>
+
+<div class="analytics-card">
+
+<i class="fa-solid fa-camera"></i>
+
+<h3>Activities</h3>
+
+<h2 id="activityBudget">₹0</h2>
+
+<p>Sightseeing & Fun</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--=========================================================
+                    AI ITINERARY
+==========================================================-->
+
+<section id="itinerary">
+
+<div class="container">
+
+<div class="planner-header">
+
+<span class="section-tag">
+
+<i class="fa-solid fa-robot"></i>
+
+AI ITINERARY
+
+</span>
+
+<h2>Day Wise Travel Schedule</h2>
+
+<p>
+
+Your personalized itinerary will appear below after
+generating your travel plan.
+
+</p>
+
+</div>
+
+<div id="itineraryContainer">
+
+<div class="day-card">
+
+<h3>
+
+<i class="fa-solid fa-calendar-day"></i>
+
+No Itinerary Generated
+
+</h3>
+
+<p>
+
+Complete the planner form to generate your
+AI-powered day-wise travel schedule.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--=========================================================
+                    TRAVEL DASHBOARD
+==========================================================-->
+
+<section id="travelDashboard">
+
+<div class="container">
+
+<div class="planner-header">
+
+<span class="section-tag">
+
+<i class="fa-solid fa-chart-line"></i>
+
+SMART DASHBOARD
+
+</span>
+
+<h2>Live Travel Information</h2>
+
+<p>
+
+Monitor weather conditions and destination maps
+before beginning your journey.
+
+</p>
+
+</div>
+
+<div class="dashboard-grid">
+
+<div class="dashboard-card">
+
+<h3>
+
+<i class="fa-solid fa-cloud-sun"></i>
+
+Live Weather
+
+</h3>
+
+<div class="weather-card">
+
+<div class="weather-icon">
+
+<i class="fa-solid fa-cloud-sun"></i>
+
+</div>
+
+<h2 id="cityName">
+
+Choose Destination
+
+</h2>
+
+<div class="weather-temp">
+
+<span id="temperature">--°C</span>
+
+</div>
+
+<p id="weatherStatus">
+
+Weather information will appear here.
+
+</p>
+
+</div>
+
+</div>
+<!--=========================================================
+                GOOGLE MAP
+==========================================================-->
+
+<div class="dashboard-card">
+
+<h3>
+
+<i class="fa-solid fa-map-location-dot"></i>
+
+Destination Map
+
+</h3>
+
+<div id="googleMap">
+
+Loading Google Map...
+
+</div>
+
+<div class="map-actions">
+
+<button id="mapBtn">
+
+<i class="fa-solid fa-location-arrow"></i>
+
+Open in Google Maps
+
+</button>
+
+<button id="googleReviewBtn">
+
+<i class="fa-brands fa-google"></i>
+
+Google Reviews
+
+</button>
+
+<button id="watchVideoBtn">
+
+<i class="fa-brands fa-youtube"></i>
+
+Travel Guide
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--=========================================================
+                SAVED TRIPS
+==========================================================-->
+
+<section id="savedTrips">
+
+<div class="container">
+
+<div class="planner-header">
+
+<span class="section-tag">
+
+<i class="fa-solid fa-bookmark"></i>
+
+MY TRIPS
+
+</span>
+
+<h2>Saved Travel Plans</h2>
+
+<p>
+
+Every travel plan you generate can be saved
+and managed from this section.
+
+</p>
+
+</div>
+
+<div class="planner-buttons">
+
+<button id="viewTrips">
+
+<i class="fa-solid fa-folder-open"></i>
+
+View Saved Trips
+
+</button>
+
+<button onclick="exportTrips()">
+
+<i class="fa-solid fa-download"></i>
+
+Export JSON
+
+</button>
+
+<button onclick="clearAllTrips()">
+
+<i class="fa-solid fa-trash"></i>
+
+Delete All
+
+</button>
+
+</div>
+
+<div id="savedTripsContainer">
+
+<div class="saved-trip-card">
+
+<h3>
+
+No Trips Saved Yet
+
+</h3>
+
+<p>
+
+Generate your first trip to save it here.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--=========================================================
+                QUICK ACTIONS
+==========================================================-->
+
+<section id="quickActions">
+
+<div class="container">
+
+<div class="planner-header">
+
+<span class="section-tag">
+
+<i class="fa-solid fa-bolt"></i>
+
+QUICK ACCESS
+
+</span>
+
+<h2>Travel Tools</h2>
+
+<p>
+
+Access travel videos, reviews and navigation
+with one click.
+
+</p>
+
+</div>
+
+<div class="action-grid">
+
+<div class="action-card">
+
+<i class="fa-brands fa-youtube"></i>
+
+<h3>Travel Videos</h3>
+
+<p>
+
+Watch YouTube travel guides.
+
+</p>
+
+<button id="travelGuideBtn">
+
+Open
+
+</button>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-brands fa-google"></i>
+
+<h3>Google Reviews</h3>
+
+<p>
+
+Read genuine traveler reviews.
+
+</p>
+
+<button id="reviewBtn">
+
+Open
+
+</button>
+
+</div>
+
+<div class="action-card">
+
+<i class="fa-solid fa-route"></i>
+
+<h3>Directions</h3>
+
+<p>
+
+Navigate instantly using Google Maps.
+
+</p>
+
+<button id="directionBtn">
+
+Open
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--=========================================================
+                    CONTACT
+==========================================================-->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="planner-header">
+
+<span class="section-tag">
+
+<i class="fa-solid fa-envelope"></i>
+
+CONTACT US
+
+</span>
+
+<h2>Let's Plan Your Next Journey</h2>
+
+<p>
+
+Have questions, suggestions or feedback?
+We'd love to hear from you.
+
+</p>
+
+</div>
+
+<div class="contact-container">
+
+<form id="contactForm" class="contact-form">
+
+<input
+type="text"
+placeholder="Your Full Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email Address"
+required>
+
+<input
+type="text"
+placeholder="Subject"
+required>
+
+<textarea
+placeholder="Write your message here..."
+required></textarea>
+
+<button type="submit">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!--=========================================================
+                    FOOTER
+==========================================================-->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div class="footer-box">
+
+<h3>
+
+<i class="fa-solid fa-earth-asia"></i>
+
+Smart Travel Planner
+
+</h3>
+
+<p>
+
+Plan smarter,
+travel confidently,
+and explore India's most beautiful destinations
+with AI-powered planning.
+
+</p>
+
+<div class="social-links">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-twitter"></i></a>
+
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+<div class="footer-box">
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<a href="#">Home</a>
+
+<a href="#planner">Planner</a>
+
+<a href="#popular">Destinations</a>
+
+<a href="#travelDashboard">Dashboard</a>
+
+<a href="#savedTrips">Saved Trips</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+<div class="footer-box">
+
+<h3>
+
+Features
+
+</h3>
+
+<a href="#planner">AI Planner</a>
+
+<a href="#tripAnalytics">Budget Analysis</a>
+
+<a href="#itinerary">AI Itinerary</a>
+
+<a href="#travelDashboard">Weather</a>
+
+<a href="#travelDashboard">Google Maps</a>
+
+</div>
+
+<div class="footer-box">
+
+<h3>
+
+Developer
+
+</h3>
+
+<p>
+
+Department of Computer Science
+
+</p>
+
+<p>
+
+Final Year Major Project
+
+</p>
+
+<p>
+
+Smart Travel Planner 2026
+
+</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 Smart Travel Planner
+
+&nbsp;|&nbsp;
+
+Designed & Developed for Academic Project
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<!--=========================================================
+                SCROLL TO TOP
+==========================================================-->
+
+<div id="scrollTop">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</div>
+
+<!--=========================================================
+                    JAVASCRIPT
+==========================================================-->
+
+<script src="js/theme.js"></script>
+
+<script src="js/planner.js"></script>
+
+<script src="js/weather.js"></script>
+
+<script src="js/map.js"></script>
+
+<script src="js/storage.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
