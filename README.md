@@ -1,5 +1,3 @@
-# Smart_Travel_Planner
-Smart Travel Planner System is a responsive web application built with HTML, CSS, and JavaScript that helps users plan trips with AI-inspired itineraries, budget analysis, live weather updates, Google Maps integration, destination guides, and trip management through an intuitive, modern interface.
 # 🌍 Smart Travel Planner System
 
 A modern AI-inspired travel planning web application that helps users create personalized travel plans, estimate budgets, explore destinations, check live weather, view Google Maps, and save trips—all in one place.
@@ -97,11 +95,11 @@ Example:
 
 ## 👨‍💻 Developed By
 
-**Nelapati Veladri**
+**Yedukondalu Velpuri**
 
-B.Tech Final Year Student
+B.Tech Third Year Student
 
-Department of Computer Science
+Department of Computer Science and Engineering
 
 ---
 
